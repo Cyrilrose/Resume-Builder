@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swiftdeal.resume.builder" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.swiftdeal.swiftintern.resume.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.swiftdeal.resume.swiftintern.resume.Resumedisplay"
+            android:label="ResumeBuilder"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+           <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.swiftdeal.resume.swiftintern.resume.MainActivity"/>
+
+        </activity>
+        <activity android:name="com.swiftdeal.resume.swiftintern.resume.detail"
+            android:label="ResumeBuilder"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.swiftdeal.resume.swiftintern.resume.Resumedisplay"/>
+        </activity>
+
+    <activity android:name="com.swiftdeal.resume.swiftintern.resume.update"
+        android:label="ResumeBuilder"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.swiftdeal.resume.swiftintern.resume.detail"/>
+    </activity>
+        <provider
+            android:authorities="com.swiftdeal.resume.builder"
+            android:name="com.swiftdeal.resume.swiftintern.resume.ResumeProvider"/>
+
+    </application>
+
+</manifest>

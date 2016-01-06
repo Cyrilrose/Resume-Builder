@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="43dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main"
+        >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFESSIONAL DETAILS"
+            android:id="@+id/personal"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PURSUING DEGREE"
+            android:id="@+id/current" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/group"
+            >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST GRADUATION"
+            android:id="@+id/pg" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADUATION"
+            android:checked="true"
+            android:id="@+id/graduation" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUALIFICATION"
+            android:id="@+id/qualify1"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="BTECH-CS"
+            android:ems="10"
+            android:id="@+id/qualify1_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTITUTE/COLLEGE"
+            android:id="@+id/college1"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/college1_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY/BOARD"
+            android:id="@+id/university1"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/university1_e"
+            android:inputType="text"
+            android:ems="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERCENTAGE"
+            android:id="@+id/per1"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/per1_e"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:id="@+id/year1"
+            android:inputType="number"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/year1_e"
+            android:text="PURSUING" />
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/grad"
+        android:visibility="invisible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUALIFICATION"
+            android:id="@+id/qualify2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="BTECH-CS"
+            android:ems="10"
+            android:id="@+id/qualify2_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTITUTE/COLLEGE"
+            android:id="@+id/college2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/college2_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY/BOARD"
+            android:id="@+id/university2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/university2_e"
+            android:inputType="text"
+            android:ems="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERCENTAGE"
+            android:id="@+id/per2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/per2_e"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:id="@+id/year2"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/year2_e"
+            android:text="PURSUING" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/school"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR 12TH"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUALIFICATION"
+            android:id="@+id/qualify3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="BTECH-CS"
+            android:ems="10"
+            android:id="@+id/qualify3_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTITUTE/COLLEGE"
+            android:id="@+id/college3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/college3_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY/BOARD"
+            android:id="@+id/university3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/university3_e"
+            android:inputType="text"
+            android:ems="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERCENTAGE"
+            android:id="@+id/per3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/per3_e"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:id="@+id/year3"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/year3_e"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR 10TH"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUALIFICATION"
+            android:id="@+id/qualify4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="BTECH-CS"
+            android:ems="10"
+            android:id="@+id/qualify4_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTITUTE/COLLEGE"
+            android:id="@+id/college4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/college4_e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY/BOARD"
+            android:id="@+id/university4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/university4_e"
+            android:inputType="text"
+            android:ems="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERCENTAGE"
+            android:id="@+id/per4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/per4_e"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR"
+            android:id="@+id/year4"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/year4_e"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT PAGE"
+            android:id="@+id/button1"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
